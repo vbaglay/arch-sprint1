@@ -1,5 +1,5 @@
 import React from 'react';
-import PopupWithForm from '../../../../src/components/PopupWithForm';
+const PopupWithForm = React.lazy(() => import('shared/PopupWithForm'));
 
 function AddPlacePopup({ isOpen, onAddPlace, onClose }) {
   const [name, setName] = React.useState('');

@@ -1,4 +1,5 @@
 import React from 'react';
+const PopupWithForm = React.lazy(() => import('shared/PopupWithForm'));
 
 function ImagePopup({ card, onClose }) {
   return (

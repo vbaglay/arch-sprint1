@@ -1,16 +1,18 @@
 Проектирование
 
 Выбрал Module Federation фреймворк для данного задания. 
-Над проектом будут работать несколько независимых команд, 
-Данный патерн позволяет вертикально нарезать микрофронтеды на 3 домена: авторизация, профиль пользователя и работа с местами(карточками).
+ 
+Вертикально нарезал  микрофронтеды на 3 домена: авторизация, профиль пользователя и работа с местами(карточками). Стратегия изоляции тут тоже применима, все микрофронтенды не будут зависить друг от друга. 
+Общие зависимости можно вынести в отдельный модуль shared-ui и импортировать где необходимо.
+С точки зрения независимых фреймворков(vua react, angular) в данном проекте в этом нет необходимости, вполне достаточно одного. Независимость команд обеспечивается разделением на уровне бизнес-функционала и изолированности самих микрофронтедов. Компоненты будут компоноваться run-time, что поддерживается Module federation, который позволяет микрофронтендам динамически обмениваться зависимостями во время выполнения.
+Нет смысла в SPA, так как достаточно например React для реализации всего ф-ла приложения.
 
 
 host  - это основное приложение Host webmodule plugin
 Компоненты:
-host/src/components/App.js
+host/src/components/App.js 
 host/src/components/Footer.js
 host/src/components/Header.js
-host/src/components/PopupWithForm.js
 host/src/components/ProtectedRoute.js
 
 
@@ -26,10 +28,13 @@ places-microfrontend - remote модуль загрузки фоток, удал
 microfrontend/places-microfrontend/src/components/AddPlacePopup.js
 microfrontend/places-microfrontend/src/components/Card.js
 microfrontend/places-microfrontend/src/components/ImagePopup.js
-microfrontend/places-microfrontend/src/components/PopupWithForm.js
+
 
 profile-microfrontend - remote модуль профиля пользователя
 Компоненты:
 microfrontend/profile-microfrontend/src/components/EditAvatarPopup.js
 microfrontend/profile-microfrontend/src/components/EditProfilePopup.js
-microfrontend/places-microfrontend/src/components/PopupWithForm.js
+
+shared-ui - модуль общих компонентов и стилей
+Компоненты:
+microfrontend/shared-ui/src/components/PopupWithForm.js

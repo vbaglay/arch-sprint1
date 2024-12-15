@@ -1,5 +1,6 @@
 import React from 'react';
 import { CurrentUserContext } from '../contexts/CurrentUserContext';
+const PopupWithForm = React.lazy(() => import('shared/PopupWithForm'));
 
 function Card({ card, onCardClick, onCardLike, onCardDelete }) {
   const cardStyle = { backgroundImage: `url(${card.link})` };

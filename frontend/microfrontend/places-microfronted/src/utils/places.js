@@ -32,7 +32,7 @@ export const removeCard(cardID) {
         .then(res => res.ok ? res.json() : Promise.reject(`Ошибка: ${res.status}`));
 };
 
-changeLikeCardStatus(cardID, like) {
+export const changeLikeCardStatus(cardID, like) {
     // Обычная реализация: 2 разных метода для удаления и постановки лайка.
     return fetch(`${this._address}/${this._groupId}/cards/like/${cardID}`, {
       method: like ? 'PUT' : 'DELETE',

@@ -200,7 +200,7 @@ function App() {
             <Register onRegister={onRegister} />
           </Route>
           <Route path="/signin">
-            <Login onLogin={onLogin} />
+                
           </Route>
         </Switch>
         <Footer />

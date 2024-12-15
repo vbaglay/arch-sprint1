@@ -7,8 +7,7 @@ new ModuleFederationPlugin({
         auth: 'auth@http://localhost:3003/remoteEntry.js',
     },
     exposes: {
-        './PopupWithForm': './src/components/PopupWithForm',
-        './popupstyles': './src/styles/popup.css',
+        
     },
     shared: {
         react: { singleton: true },

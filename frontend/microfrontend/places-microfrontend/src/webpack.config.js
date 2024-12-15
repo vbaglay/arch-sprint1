@@ -1,6 +1,3 @@
-import 'host/popupstyles';
-import 'host/PopupWithForm';
-
 new ModuleFederationPlugin({
     name: 'places',
     filename: 'remoteEntry.js',

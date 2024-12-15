@@ -17,7 +17,7 @@ import ProtectedRoute from "./ProtectedRoute";
 import * as auth from "../utils/auth.js";
 
 function App() {
-  const [isEditProfilePopupOpen, setIsEditProfilePopupOpen] =
+  const [isEditProfilePopupOpen, F] =
     React.useState(false);
   const [isAddPlacePopupOpen, setIsAddPlacePopupOpen] = React.useState(false);
   const [isEditAvatarPopupOpen, setIsEditAvatarPopupOpen] =

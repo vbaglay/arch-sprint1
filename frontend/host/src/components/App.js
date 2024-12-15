@@ -4,12 +4,12 @@ import Header from "./Header";
 import Main from "./Main";
 import Footer from "./Footer";
 import PopupWithForm from "./PopupWithForm";
-import ImagePopup from "./ImagePopup";
+import ImagePopup from "../../microfrontend/places-microfronted/src/components/ImagePopup.js";
 import api from "../utils/api";
 import { CurrentUserContext } from "../contexts/CurrentUserContext";
-import EditProfilePopup from "./EditProfilePopup";
-import EditAvatarPopup from "./EditAvatarPopup";
-import AddPlacePopup from "./AddPlacePopup";
+import EditProfilePopup from "../../microfrontend/profile-microfronted/src/components/EditProfilePopup.js";
+import EditAvatarPopup from "../../microfrontend/profile-microfronted/src/components/EditAvatarPopup.js";
+import AddPlacePopup from "../../microfrontend/places-microfronted/src/components/AddPlacePopup.js";
 import Register from "./Register";
 import Login from "./Login";
 import InfoTooltip from "./InfoTooltip";
@@ -200,7 +200,7 @@ function App() {
             <Register onRegister={onRegister} />
           </Route>
           <Route path="/signin">
-                
+
           </Route>
         </Switch>
         <Footer />

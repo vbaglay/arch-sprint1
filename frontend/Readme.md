@@ -15,34 +15,34 @@ https://github.com/vbaglay/arch-sprint1.git
 
 host  - это основное приложение Host webmodule plugin
 Компоненты:
-host/src/components/App.js 
-host/src/components/Footer.js
-host/src/components/Header.js
-host/src/components/ProtectedRoute.js
+- host/src/components/App.js 
+- host/src/components/Footer.js
+- host/src/components/Header.js
+- host/src/components/ProtectedRoute.js
 
 
 auth-microfrontend - remote модуль авторизации
 Компоненты:
-microfrontend/auth-microfrontend/src/components/InfoTooltip.js
-microfrontend/auth-microfrontend/src/components/Login.js
-ьicrofrontend/auth-microfrontend/src/components/Register.js
+- microfrontend/auth-microfrontend/src/components/InfoTooltip.js
+- microfrontend/auth-microfrontend/src/components/Login.js
+- microfrontend/auth-microfrontend/src/components/Register.js
 
 
 places-microfrontend - remote модуль загрузки фоток, удаление и сбор лайков
 Компоненты:
-microfrontend/places-microfrontend/src/components/AddPlacePopup.js
-microfrontend/places-microfrontend/src/components/Card.js
-microfrontend/places-microfrontend/src/components/ImagePopup.js
+- microfrontend/places-microfrontend/src/components/AddPlacePopup.js
+- microfrontend/places-microfrontend/src/components/Card.js
+- microfrontend/places-microfrontend/src/components/ImagePopup.js
 
 
 profile-microfrontend - remote модуль профиля пользователя
 Компоненты:
-microfrontend/profile-microfrontend/src/components/EditAvatarPopup.js
-microfrontend/profile-microfrontend/src/components/EditProfilePopup.js
+- microfrontend/profile-microfrontend/src/components/EditAvatarPopup.js
+- microfrontend/profile-microfrontend/src/components/EditProfilePopup.js
 
 shared-ui - модуль общих компонентов и стилей
 Компоненты:
-microfrontend/shared-ui/src/components/PopupWithForm.js
+- microfrontend/shared-ui/src/components/PopupWithForm.js
 
 
 Задание 2

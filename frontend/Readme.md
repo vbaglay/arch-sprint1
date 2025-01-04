@@ -1,6 +1,6 @@
+Задание 1
+---------------------
 https://github.com/vbaglay/arch-sprint1.git
-
-    
 
 Проектирование
 
@@ -43,3 +43,8 @@ microfrontend/profile-microfrontend/src/components/EditProfilePopup.js
 shared-ui - модуль общих компонентов и стилей
 Компоненты:
 microfrontend/shared-ui/src/components/PopupWithForm.js
+
+
+Задание 2
+---------------------
+https://github.com/vbaglay/yandex-backend-sprint1/blob/main/arch_template_task2_solution.drawio

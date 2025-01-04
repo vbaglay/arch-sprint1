@@ -1,6 +1,6 @@
 Задание 1
 ---------------------
-https://github.com/vbaglay/arch-sprint1.git
+https://github.com/vbaglay/arch-sprint1/tree/sprint_1
 
 Проектирование
 

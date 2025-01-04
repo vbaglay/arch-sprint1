@@ -4,12 +4,12 @@ import Header from "./Header";
 import Main from "./Main";
 import Footer from "./Footer";
 import PopupWithForm from "./PopupWithForm";
-import ImagePopup from "./ImagePopup";
+import ImagePopup from "../../microfrontend/places-microfronted/src/components/ImagePopup.js";
 import api from "../utils/api";
 import { CurrentUserContext } from "../contexts/CurrentUserContext";
-import EditProfilePopup from "./EditProfilePopup";
-import EditAvatarPopup from "./EditAvatarPopup";
-import AddPlacePopup from "./AddPlacePopup";
+import EditProfilePopup from "../../microfrontend/profile-microfronted/src/components/EditProfilePopup.js";
+import EditAvatarPopup from "../../microfrontend/profile-microfronted/src/components/EditAvatarPopup.js";
+import AddPlacePopup from "../../microfrontend/places-microfronted/src/components/AddPlacePopup.js";
 import Register from "./Register";
 import Login from "./Login";
 import InfoTooltip from "./InfoTooltip";
@@ -17,7 +17,7 @@ import ProtectedRoute from "./ProtectedRoute";
 import * as auth from "../utils/auth.js";
 
 function App() {
-  const [isEditProfilePopupOpen, setIsEditProfilePopupOpen] =
+  const [isEditProfilePopupOpen, F] =
     React.useState(false);
   const [isAddPlacePopupOpen, setIsAddPlacePopupOpen] = React.useState(false);
   const [isEditAvatarPopupOpen, setIsEditAvatarPopupOpen] =
@@ -200,7 +200,7 @@ function App() {
             <Register onRegister={onRegister} />
           </Route>
           <Route path="/signin">
-            <Login onLogin={onLogin} />
+
           </Route>
         </Switch>
         <Footer />
